@@ -58,6 +58,77 @@ $menu-hover-color: #D87D4A;
 
 .footer {
     background-color: $bg-color-black;
+    width: 100%;
+    height: fit-content;
+}
+
+.footerContainer {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.logoNmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.footerMenuList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+        list-style-type: none;
+
+        .link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $txt-color-white;
+            font-size: 0.813rem;
+            font-weight: 700;
+            line-height: 1.56rem;
+            letter-spacing: 0.125rem;
+        }
+
+        .link:hover {
+            color: $menu-hover-color;
+        }
+    }
+    
+}
+
+.footerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    gap: 2rem;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $txt-color-white;
+    opacity: 0.5;
+    font-size: 0.937rem;
+    font-weight: 500;
+    line-height: 1.562rem;
+    gap: 2rem;
+    margin-bottom: 1.3rem;
 }
 
 @media (min-width: 768px) {
