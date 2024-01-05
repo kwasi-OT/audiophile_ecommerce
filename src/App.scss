@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg-color-black: #000000;
+$txt-color-black: #000000;
+$txt-color-white: #ffffff;
+
+.header {
+    width: 100%;
+    height: 5rem;
+    background-color: $bg-color-black;
+    color: $txt-color-white;
+
+    .headerContainer {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menuList {
+            display: flex;
+            gap: 1rem;
+            display: none;
+            li {
+                list-style-type: none;
+
+                .link{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $txt-color-white;
+                }
+            }
+            
+        }
+    }
+}
+

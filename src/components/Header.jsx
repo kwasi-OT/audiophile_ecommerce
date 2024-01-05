@@ -2,6 +2,7 @@
 import React from 'react'
 import { TiThMenu } from "react-icons/ti";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -10,10 +11,10 @@ const Header = () => {
                 <TiThMenu/>
                 <h1 className='logoText'>audiophile</h1>
                 <ul className='menuList'>
-                    <li>Home</li>
-                    <li>Headphones</li>
-                    <li>Speakers</li>
-                    <li>Earphones</li>
+                    <li><Link className='link'>Home</Link></li>
+                    <li><Link className='link'>Headphones</Link></li>
+                    <li><Link className='link'>Speakers</Link></li>
+                    <li><Link className='link'>Earphones</Link></li>
                 </ul>
                 <AiOutlineShoppingCart/>
             </div>
