@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
 // color variables
 $bg-color-black: #000000;
 $txt-color-black: #000000;
 $txt-color-white: #ffffff;
+$menu-hover-color: #D87D4A;
 
 .header {
     width: 100%;
@@ -36,6 +43,14 @@ $txt-color-white: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
             color: $txt-color-white;
+            font-size: 0.813rem;
+            font-weight: 700;
+            line-height: 1.56rem;
+            letter-spacing: 0.125rem;
+        }
+
+        .link:hover {
+            color: $menu-hover-color;
         }
     }
     
