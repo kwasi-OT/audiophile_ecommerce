@@ -9,15 +9,21 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='headerContainer'>
-                <Link><img src={mobilemenu} alt='mobile menu icon'/></Link>
-                <Link><img src={logosvg} alt='logo'/></Link>
+                <div className='mobileMenu'>
+                    <Link><img src={mobilemenu} alt='mobile menu icon' /></Link>
+                </div>
+                <div className='logo'>
+                    <Link><img src={logosvg} alt='logo' /></Link>
+                </div>
                 <ul className='menuList'>
                     <li><Link className='link'>Home</Link></li>
                     <li><Link className='link'>Headphones</Link></li>
                     <li><Link className='link'>Speakers</Link></li>
                     <li><Link className='link'>Earphones</Link></li>
                 </ul>
-                <Link><img src={cartsvg} alt='cart icon'/></Link>
+                <div className='cartIcon'>
+                    <Link><img src={cartsvg} alt='cart icon'/></Link>
+                </div>
             </div>
         </div>
     )
