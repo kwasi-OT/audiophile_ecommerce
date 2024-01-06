@@ -71,6 +71,7 @@ $menu-hover-color: #D87D4A;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
 }
 
 .logoNmenu {
@@ -80,6 +81,7 @@ $menu-hover-color: #D87D4A;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 1.8rem;
+    margin-top: 1.2rem;
 }
 
 .footerMenuList {
@@ -133,6 +135,15 @@ $menu-hover-color: #D87D4A;
 
 @media (min-width: 768px) {
 
+    .headerContainer {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .mobileMenu {
         display: none !important;
     }
@@ -151,6 +162,87 @@ $menu-hover-color: #D87D4A;
             }
         }
         
+    }
+
+    .footerContainer {
+        margin: 0 auto;
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+    }
+    
+    .logoNmenu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 1.8rem;
+        margin-top: 3rem;
+    }
+    
+    .footerMenuList {
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        // justify-content: center;
+        gap: 1rem;
+    
+        li {
+            list-style-type: none;
+    
+            .link{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $txt-color-white;
+                font-size: 0.813rem;
+                font-weight: 700;
+                line-height: 1.56rem;
+                letter-spacing: 0.125rem;
+            }
+    
+            .link:hover {
+                color: $menu-hover-color;
+            }
+        }
+        
+    }
+    
+    .footerTextContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+        gap: 2rem;
+    }
+    
+    .footerText {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        color: $txt-color-white;
+        opacity: 0.5;
+        font-size: 0.937rem;
+        font-weight: 500;
+        line-height: 1.562rem;
+        gap: 2rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .socialIcon {
+        width: 30%;
+        text-align: end;
     }
 
 }
