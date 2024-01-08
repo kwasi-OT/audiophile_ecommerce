@@ -56,6 +56,8 @@ $menu-hover-color: #D87D4A;
     
 }
 
+// footer styles beginning
+
 .footer {
     background-color: $bg-color-black;
     width: 100%;
@@ -132,6 +134,15 @@ $menu-hover-color: #D87D4A;
     gap: 2rem;
     margin-bottom: 1.3rem;
 }
+// footer styles ending
+
+// main body styles beginning
+
+.main {
+    width: 90%;
+    min-height: fit-content;
+    height: 100dvh;
+}
 
 @media (min-width: 768px) {
 
@@ -164,13 +175,14 @@ $menu-hover-color: #D87D4A;
         
     }
 
+    // footer styles begin
+
     .footerContainer {
         margin: 0 auto;
         width: 80%;
         height: fit-content;
         display: flex;
         flex-direction: column;
-        // align-items: center;
         justify-content: space-between;
         gap: 1rem;
         margin-bottom: 1.2rem;
@@ -192,8 +204,6 @@ $menu-hover-color: #D87D4A;
     .footerMenuList {
         display: flex;
         flex-direction: row;
-        // align-items: center;
-        // justify-content: center;
         gap: 1rem;
     
         li {
